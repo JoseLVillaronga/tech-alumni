@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+
+}
+.header {
+	width: 100%;
+	background-color: rgba(0,0,0,.2);
+}
+.nav {
+	padding: 1em;
+}
+p {
+	padding: 1em;
+}
+h1 {
+	padding: .5em;
+}
+
+.brand-logo {
+	margin-left: 20px;
+}
+.nav1 {
+	background-color: rgba(0,0,255,.7);
+	background-image: url('../img/blue-1634110-2.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.collapsible-header {
+	color: white;
+	background-image: url('../img/paragraph_mid.jpg');
+	background-size: cover;
+}
+a .collapsible-header {
+	color: white;
+}
+body main {
+	min-height: 550px;
+}
+body {
+	background-color: rgba(255,255,255,1);
+}
+#main {
+	background-color: rgba(255,255,255,1);
+}
+#logo-teccam {
+	display: inline-block;
+	vertical-align: top;
+	height: 77px !important;
+	margin: auto;
+	margin-top: -8px;
+}
+#menu-lateral-logo {
+	height: 150px;
+	background-image: url('../img/chip2.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#caja-cont {
+	/*background-image: url('../img/fondo-cont.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;*/
+	height: 100%;
+}
+#i1{
+	background-image: url('../img/electronica/motherboard-152501.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#i2{
+	background-image: url('../img/Ingenieria/construction-370588_1920.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#i3{
+	background-image: url('../img/energia/solar-system-2939560_1920.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#i4{
+	background-image: url('../img/docsis/network-1572617_1920.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#i5{
+	background-image: url('../img/docsis/gs7000_2x2copy_2102_detail.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.nav-wrapper ul li:hover {
+	background-color: rgba(255,255,255,.3) !important;
+}
+.footer-copyright {
+	background-color: rgba(210,30,30,.8) !important;
+}
+.page-footer {
+	background-color: rgba(210,30,30,.7) !important;
+}
+@media only screen and (max-width : 992px) {
+  	.brand-logo {
+  		margin-left: 0;
+  	}
+	body main {
+		min-height: 300px;
+	}
+	#logo-teccam {
+		height: 68px !important;
+	}
+}
+#pie li {
+	padding-top: 8px;
+}
+#pie li a {
+	vertical-align: middle;
+	font-size: 1rem;
+}
+#pie li a i {
+	vertical-align: bottom;
+}
+#pie li a img {
+	vertical-align: bottom;
+}
+@media only screen and (min-width : 601px) {
+	#logo-teccam {
+		height: 77px !important;
+	}
+}

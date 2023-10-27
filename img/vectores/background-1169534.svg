@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 1920 1080" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#000066}
+    .fil1 {fill:#010167}
+    .fil2 {fill:#030369}
+    .fil3 {fill:#04046A}
+    .fil4 {fill:#06066C}
+    .fil5 {fill:#07076D}
+    .fil6 {fill:#09096F}
+    .fil7 {fill:#0A0A70}
+    .fil8 {fill:#0B0B71}
+    .fil9 {fill:#0D0D73}
+    .fil10 {fill:#0E0E74}
+    .fil11 {fill:#101076}
+    .fil12 {fill:#111177}
+    .fil13 {fill:#131379}
+    .fil14 {fill:#14147A}
+    .fil15 {fill:#16167C}
+    .fil16 {fill:#17177D}
+    .fil17 {fill:#18187E}
+    .fil18 {fill:#1A1A80}
+    .fil19 {fill:#1B1B81}
+    .fil20 {fill:#1D1D83}
+    .fil21 {fill:#1E1E84}
+    .fil22 {fill:#202086}
+    .fil23 {fill:#212187}
+    .fil24 {fill:#222288}
+    .fil25 {fill:#24248A}
+    .fil26 {fill:#25258B}
+    .fil27 {fill:#27278D}
+    .fil28 {fill:#28288E}
+    .fil29 {fill:#2A2A90}
+    .fil30 {fill:#2B2B91}
+    .fil31 {fill:#2D2D93}
+    .fil32 {fill:#2E2E94}
+    .fil33 {fill:#2F2F95}
+    .fil34 {fill:#313197}
+    .fil35 {fill:#323298}
+    .fil36 {fill:#34349A}
+    .fil37 {fill:#35359B}
+    .fil38 {fill:#37379D}
+    .fil39 {fill:#38389E}
+    .fil40 {fill:#39399F}
+    .fil41 {fill:#3B3BA1}
+    .fil42 {fill:#3C3CA2}
+    .fil43 {fill:#3E3EA4}
+    .fil44 {fill:#3F3FA5}
+    .fil45 {fill:#4141A7}
+    .fil46 {fill:#4242A8}
+    .fil47 {fill:#4444AA}
+    .fil48 {fill:#4545AB}
+    .fil49 {fill:#4646AC}
+    .fil50 {fill:#4848AE}
+    .fil51 {fill:#4949AF}
+    .fil52 {fill:#4B4BB1}
+    .fil53 {fill:#4C4CB2}
+    .fil54 {fill:#4E4EB4}
+    .fil55 {fill:#4F4FB5}
+    .fil56 {fill:#5050B6}
+    .fil57 {fill:#5252B8}
+    .fil58 {fill:#5353B9}
+    .fil59 {fill:#5555BB}
+    .fil60 {fill:#5656BC}
+    .fil61 {fill:#5858BE}
+    .fil62 {fill:#5959BF}
+    .fil63 {fill:#5B5BC1}
+    .fil64 {fill:#5C5CC2}
+    .fil65 {fill:#5D5DC3}
+    .fil66 {fill:#5F5FC5}
+    .fil67 {fill:#6060C6}
+    .fil68 {fill:#6262C8}
+    .fil69 {fill:#6363C9}
+    .fil70 {fill:#6565CB}
+    .fil71 {fill:#6666CC}
+   ]]>
+  </style>
+ </defs>
+  <rect class="fil0" width="1920" height="1080"/>
+   <path class="fil1" d="m0 14h1895v1066h-1895v-1066z"/>
+   <path class="fil2" d="m0 28h1869v1052h-1869v-1052z"/>
+   <path class="fil3" d="m0 43h1844v1037h-1844v-1037z"/>
+   <path class="fil4" d="m0 57h1819v1023h-1819v-1023z"/>
+   <path class="fil5" d="m0 71h1794v1009h-1794v-1009z"/>
+   <path class="fil6" d="m0 85h1768v995h-1768v-995z"/>
+   <path class="fil7" d="m0 99h1743v981h-1743v-981z"/>
+   <path class="fil8" d="m0 114h1718v966h-1718v-966z"/>
+   <path class="fil9" d="m0 128h1693v952h-1693v-952z"/>
+   <path class="fil10" d="m0 142h1667v938h-1667v-938z"/>
+   <path class="fil11" d="m0 156h1642v924h-1642v-924z"/>
+   <path class="fil12" d="m0 170h1617v910h-1617v-910z"/>
+   <path class="fil13" d="m0 185h1592v895h-1592v-895z"/>
+   <path class="fil14" d="m0 199h1566v881h-1566v-881z"/>
+   <path class="fil15" d="m0 213h1541v867h-1541v-867z"/>
+   <path class="fil16" d="m0 227h1516v853h-1516v-853z"/>
+   <path class="fil17" d="m0 241h1491v839h-1491v-839z"/>
+   <path class="fil18" d="m0 256h1465v824h-1465v-824z"/>
+   <path class="fil19" d="m0 270h1440v810h-1440v-810z"/>
+   <path class="fil20" d="m0 284h1415v796h-1415v-796z"/>
+   <path class="fil21" d="m0 298h1390v782h-1390v-782z"/>
+   <path class="fil22" d="m0 313h1364v767h-1364v-767z"/>
+   <path class="fil23" d="m0 327h1339v753h-1339v-753z"/>
+   <path class="fil24" d="m0 341h1314v739h-1314v-739z"/>
+   <path class="fil25" d="m0 355h1289v725h-1289v-725z"/>
+   <path class="fil26" d="m0 369h1263v711h-1263v-711z"/>
+   <path class="fil27" d="m0 384h1238v696h-1238v-696z"/>
+   <path class="fil28" d="m0 398h1213v682h-1213v-682z"/>
+   <path class="fil29" d="m0 412h1188v668h-1188v-668z"/>
+   <path class="fil30" d="m0 426h1162v654h-1162v-654z"/>
+   <path class="fil31" d="m0 440h1137v640h-1137v-640z"/>
+   <path class="fil32" d="m0 455h1112v625h-1112v-625z"/>
+   <path class="fil33" d="m0 469h1087v611h-1087v-611z"/>
+   <path class="fil34" d="m0 483h1061v597h-1061v-597z"/>
+   <path class="fil35" d="m0 497h1036v583h-1036v-583z"/>
+   <path class="fil36" d="m0 511h1011v569h-1011v-569z"/>
+   <path class="fil37" d="m0 526h986v554h-986v-554z"/>
+   <path class="fil38" d="m0 540h960v540h-960v-540z"/>
+   <path class="fil39" d="m0 554h935v526h-935v-526z"/>
+   <path class="fil40" d="m0 568h910v512h-910v-512z"/>
+   <path class="fil41" d="m0 582h885v498h-885v-498z"/>
+   <path class="fil42" d="m0 597h859v483h-859v-483z"/>
+   <path class="fil43" d="m0 611h834v469h-834v-469z"/>
+   <path class="fil44" d="m0 625h809v455h-809v-455z"/>
+   <path class="fil45" d="m0 639h784v441h-784v-441z"/>
+   <path class="fil46" d="m0 653h758v427h-758v-427z"/>
+   <path class="fil47" d="m0 668h733v412h-733v-412z"/>
+   <path class="fil48" d="m0 682h708v398h-708v-398z"/>
+   <path class="fil49" d="m0 696h683v384h-683v-384z"/>
+   <path class="fil50" d="m0 710h657v370h-657v-370z"/>
+   <path class="fil51" d="m0 724h632v356h-632v-356z"/>
+   <path class="fil52" d="m0 739h607v341h-607v-341z"/>
+   <path class="fil53" d="m0 753h582v327h-582v-327z"/>
+   <path class="fil54" d="m0 767h556v313h-556v-313z"/>
+   <path class="fil55" d="m0 781h531v299h-531v-299z"/>
+   <path class="fil56" d="m0 795h506v285h-506v-285z"/>
+   <path class="fil57" d="m0 810h481v270h-481v-270z"/>
+   <path class="fil58" d="m0 824h455v256h-455v-256z"/>
+   <path class="fil59" d="m0 838h430v242h-430v-242z"/>
+   <path class="fil60" d="m0 852h405v228h-405v-228z"/>
+   <path class="fil61" d="m0 867h380v213h-380v-213z"/>
+   <path class="fil62" d="m0 881h354v199h-354v-199z"/>
+   <path class="fil63" d="m0 895h329v185h-329v-185z"/>
+   <path class="fil64" d="m0 909h304v171h-304v-171z"/>
+   <path class="fil65" d="m0 923h279v157h-279v-157z"/>
+   <path class="fil66" d="m0 938h253v142h-253v-142z"/>
+   <path class="fil67" d="m0 952h228v128h-228v-128z"/>
+   <path class="fil68" d="m0 966h203v114h-203v-114z"/>
+   <path class="fil69" d="m0 980h178v100h-178v-100z"/>
+   <path class="fil70" d="m0 994h152v86h-152v-86z"/>
+  <rect class="fil71" y="1009" width="127" height="71"/>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "name": "tonchik-tm/pdf-to-html",
+  "description": "This PHP class can convert your pdf files to html using poppler-utils.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Anton Nikolaev",
+      "email": "tonchik@tonchik.net",
+      "homepage": "http://www.tonchik.net",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "pelago/emogrifier": "^2.0.0"
+  },
+
+  "autoload": {
+    "psr-0": {
+      "TonchikTm": "src"
+    },
+    "psr-4": {
+      "TonchikTm\\PdfToHtml\\": "src/"
+    }
+  }
+}

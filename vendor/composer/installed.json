@@ -1,0 +1,177 @@
+[
+    {
+        "name": "symfony/css-selector",
+        "version": "v3.4.35",
+        "version_normalized": "3.4.35.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/css-selector.git",
+            "reference": "f819f71ae3ba6f396b4c015bd5895de7d2f1f85f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/f819f71ae3ba6f396b4c015bd5895de7d2f1f85f",
+            "reference": "f819f71ae3ba6f396b4c015bd5895de7d2f1f85f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2019-10-01 11:57:37",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\CssSelector\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Jean-François Simon",
+                "email": "jeanfrancois.simon@sensiolabs.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony CssSelector Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "pelago/emogrifier",
+        "version": "v2.2.0",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MyIntervals/emogrifier.git",
+            "reference": "2472bc1c3a2dee8915ecc2256139c6100024332f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/MyIntervals/emogrifier/zipball/2472bc1c3a2dee8915ecc2256139c6100024332f",
+            "reference": "2472bc1c3a2dee8915ecc2256139c6100024332f",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-libxml": "*",
+            "php": "^5.5.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0",
+            "symfony/css-selector": "^3.4.0 || ^4.0.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.2.0",
+            "phpmd/phpmd": "^2.6.0",
+            "phpunit/phpunit": "^4.8.0",
+            "squizlabs/php_codesniffer": "^3.3.2"
+        },
+        "time": "2019-09-04 16:07:59",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Pelago\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Oliver Klee",
+                "email": "github@oliverklee.de"
+            },
+            {
+                "name": "Zoli Szabó",
+                "email": "zoli.szabo+github@gmail.com"
+            },
+            {
+                "name": "John Reeve",
+                "email": "jreeve@pelagodesign.com"
+            },
+            {
+                "name": "Jake Hotson",
+                "email": "jake@qzdesign.co.uk"
+            },
+            {
+                "name": "Cameron Brooks"
+            },
+            {
+                "name": "Jaime Prado"
+            }
+        ],
+        "description": "Converts CSS styles into inline style attributes in your HTML code",
+        "homepage": "https://www.myintervals.com/emogrifier.php",
+        "keywords": [
+            "css",
+            "email",
+            "pre-processing"
+        ]
+    },
+    {
+        "name": "tonchik-tm/pdf-to-html",
+        "version": "1.0.9",
+        "version_normalized": "1.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tonchik-tm/pdf-to-html.git",
+            "reference": "054d3dca5bee718e14e3a6b5ab3421adc01e469e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tonchik-tm/pdf-to-html/zipball/054d3dca5bee718e14e3a6b5ab3421adc01e469e",
+            "reference": "054d3dca5bee718e14e3a6b5ab3421adc01e469e",
+            "shasum": ""
+        },
+        "require": {
+            "pelago/emogrifier": "^2.0.0",
+            "php": ">=5.4.0"
+        },
+        "time": "2018-06-28 19:14:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "TonchikTm": "src"
+            },
+            "psr-4": {
+                "TonchikTm\\PdfToHtml\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Anton Nikolaev",
+                "email": "tonchik@tonchik.net",
+                "homepage": "http://www.tonchik.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "This PHP class can convert your pdf files to html using poppler-utils."
+    }
+]
