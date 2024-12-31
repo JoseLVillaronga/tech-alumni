@@ -217,159 +217,59 @@ function modificar(){
   if(window.innerWidth < 601){
     var h=window.innerHeight - 412;
   }else{
-    var h=window.innerHeight - 312;
+    var h=window.innerHeight - 285;
   }
   document.getElementById('content').style.minHeight=h+"px";
 }
-var cmData = function(ip,mac){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/cm-data.php?ip="+ip);
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById(mac);
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
+function encriptarMensaje() {
+	const usuario = document.getElementById('usuario').value;
+	const contrasena = document.getElementById('password').value;
+	const nueva = document.getElementById('nueva').value;
+	const confirmacion = document.getElementById('confirmacion').value;
+	const str = "{\"Usuario\" : \""+usuario+"\", \"Contrasena\" : \""+contrasena+"\", \"Nueva\" : \""+nueva+"\", \"Confirmacion\" : \""+confirmacion+"\"}";
+    var encoded = "";
+    for (i=0; i<str.length;i++) {
+        var a = str.charCodeAt(i);
+        var b = a ^ 123;    // bitwise XOR with any number, e.g. 123
+        encoded = encoded+String.fromCharCode(b);
+    }
+    document.getElementById('data').value = encoded;
+    if(contrasena != nueva && nueva === confirmacion && nueva.length > 7 && confirmacion.length > 7){
+	    document.forms['formulario'].submit();
+	    document.getElementById('errorValidacion').textContent = 'Ok !!';
+    }else{
+    	document.getElementById('errorValidacion').textContent = 'Alguna de las contraseñas no cumple con los parametros, intente nuevamente ...';
+    }
+
 }
-var cmLogs = function(ip,mac){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/cm-log.php?ip="+ip);
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById(mac);
-				caja.innerHTML = xhr.responseText;
-			}
-		}
+function muestra(){
+	if(document.getElementById('password').type == 'password'){
+		document.getElementById('password').type = 'text';
+		document.getElementById('nueva').type = 'text';
+		document.getElementById('confirmacion').type = 'text';
+	}else{
+		document.getElementById('password').type = 'password';
+		document.getElementById('nueva').type = 'password';
+		document.getElementById('confirmacion').type = 'password';
 	}
-	xhr.send(null);
 }
-var cmDataClose = function(mac){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/vacio.php");
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById(mac);
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-var pruebaInfo = function(mac,id){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/tests-info.php?id="+mac+"&mac="+id);
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById(mac);
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-var pruebaTipo = function(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/test-lista-abiertas.php");
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById("prueba");
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-var pruebaTipo2 = function(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/test-lista-cerradas.php");
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById("prueba");
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-var pruebaTipo3 = function(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/test-lista-todas.php");
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById("prueba");
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-var pruebaCerrar = function(mac){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","/vacio.php");
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById(mac);
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-var monitor = function(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","monitor-din.php?nc="+Math.random());
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById("monitor");
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-setInterval(monitor,4000);
-var monitorUD = function(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","monitorUD-din.php?nc="+Math.random());
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById("monitorUD");
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-setInterval(monitorUD,4000);
-var virtOper = function(){
-	var xhr = new XMLHttpRequest();
-	xhr.open("GET","virt-estado2.php?nc="+Math.random());
-	xhr.onreadystatechange = function(){
-		if(xhr.readyState == 4){
-			if(xhr.status == 200){
-				var caja = document.getElementById("virtOper");
-				caja.innerHTML = xhr.responseText;
-			}
-		}
-	}
-	xhr.send(null);
-}
-setInterval(virtOper,6000);
-var modificar = function(){
-	var h=window.innerHeight - 284;
-	var i=window.innerHeight - 354;
-	document.getElementById('content').style.minHeight=h+"px";
-	document.getElementById('content2').style.minHeight=i+"px";
+function encriptarMensaje2(){
+	String.prototype.rot13 = function(){
+	    return this.replace(/[a-zA-Z]/g, function(c){
+	        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+	    });
+	};
+	const usuario = document.getElementById('usuario').value;
+	const contrasena = document.getElementById('password').value;
+	const nueva = document.getElementById('nueva').value;
+	const confirmacion = document.getElementById('confirmacion').value;
+	const str = "{\"Usuario\" : \""+usuario+"\", \"Contrasena\" : \""+contrasena+"\", \"Nueva\" : \""+nueva+"\", \"Confirmacion\" : \""+confirmacion+"\"}";
+    
+    document.getElementById('data').value = str.rot13();
+    if(contrasena != nueva && nueva === confirmacion && nueva.length > 7 && confirmacion.length > 7){
+	    document.forms['formulario'].submit();
+	    document.getElementById('errorValidacion').textContent = 'Ok !!';
+    }else{
+    	document.getElementById('errorValidacion').textContent = 'Alguna de las contraseñas no cumple con los parametros, intente nuevamente ...';
+    }
 }

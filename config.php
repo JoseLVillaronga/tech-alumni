@@ -3,11 +3,15 @@ header("Content-Type: text/html; charset=utf-8");
 ini_set('max_execution_time', 3600);
 ini_set('max_input_time', -1);
 ini_set('memory_limit', '1024M');
-ini_set("session.cookie_lifetime","43200");
-ini_set("session.gc_maxlifetime","43200");
+ini_set("session.cookie_lifetime",43200);
+ini_set("session.gc_maxlifetime",43200);
+ini_set('session.cache_expire', 43200);
 date_default_timezone_set('America/Argentina/Buenos_Aires');
 session_start();
-error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(0);
+if(empty($_SESSION['usuario']) AND !empty($_COOKIE['usuario'])){$_SESSION['usuario']=$_COOKIE['usuario'];}
 require_once 'PHPExcel/Classes/PHPExcel.php';
 require_once 'Net/SSH2.php';
 require_once 'Math/BigInteger.php';
@@ -22,6 +26,15 @@ require_once 'TCPDF/include/tcpdf_fonts.php';
 require_once 'TCPDF/include/tcpdf_images.php';
 require_once 'TCPDF/include/tcpdf_static.php';
 require_once 'vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+$_SESSION['Key']=$_ENV['Key'];
+$_SESSION['DB_CONNECTION']=$_ENV['DB_CONNECTION'];
+$_SESSION['DB_HOST']=$_ENV['DB_HOST'];
+$_SESSION['DB_PORT']=$_ENV['DB_PORT'];
+$_SESSION['DB_DATABASE']=$_ENV['DB_DATABASE'];
+$_SESSION['DB_USERNAME']=$_ENV['DB_USERNAME'];
+$_SESSION['DB_PASSWORD']=$_ENV['DB_PASSWORD'];
 function miAutoCargador($nombreClase){
 	require_once ("clases/" . $nombreClase . ".php");
 }

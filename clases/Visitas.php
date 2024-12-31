@@ -20,7 +20,7 @@ class Visitas
 	 */
 	public function __construct($track=null){
 		$this->ip=$_SERVER['REMOTE_ADDR'];
-		$this->pagina=$_SERVER['REQUEST_URI'];
+		$this->pagina=$_SERVER['SCRIPT_NAME'];
 		$this->nav=$_SERVER['HTTP_USER_AGENT'];
 		$this->pais=$_SESSION['paisC'];
 		$this->fecha=date('Y-m-d H:i:s');

@@ -93,10 +93,10 @@ $html = <<<EOD
 EOD;
 
 // Print text using writeHTMLCell()
-//$pdf->writeHTMLCell(0, 0, '', '', $html, 0, 1, 0, true, '', true);
+$pdf->writeHTMLCell(0, 0, '', '', $html, 0, 1, 0, true, '', true);
 
 // ---------------------------------------------------------
-$pdf->Write(0, $txt, '', 0, 'C', true, 0, false, false, 0);
+
 // Close and output PDF document
 // This method has several options, check the source code documentation for more information.
 $pdf->Output('example_001.pdf', 'I');
